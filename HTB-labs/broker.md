@@ -3,17 +3,6 @@
 **Target:** `broker` (CTF Room)
 **Goal:** Exploit Apache ActiveMQ (CVE-2023-46604) for RCE, escalate privileges to root via misconfigured `nginx` sudo access.
 
----
-
-## 🛠️ Tools Used
-
-* **Nmap** – Port scanning
-* **Python** – CVE exploit & reverse shell
-* **Netcat** – Listener
-* **Nginx** – Misused binary for privilege escalation
-* **Curl / SSH** – Post-exploitation access
-
----
 
 ## 1. Reconnaissance
 
@@ -32,7 +21,7 @@ Open ports:
 
 Checked for an exposed web interface:
 
-**curl http\://<target-ip>:8161/**
+**curl http\://target-ip:8161/**
 
 Tested default login credentials:
 
