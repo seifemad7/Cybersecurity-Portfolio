@@ -5,13 +5,13 @@
 **Goal:** Initial RCE via Metabase (CVE-2023-38646), user shell, then root via OverlayFS kernel exploit (CVE-2023-2640 & CVE-2023-32629)
 
 ---
-
+````
 ## 1. Initial Recon & Enumeration
 
 Started with a full TCP port scan:  
 ```bash
 nmap -p- -sV -T4 analytical.htb
-````
+
 
 Found port **80** open, HTTP running.
 Added domain to `/etc/hosts` for convenience:
