@@ -23,7 +23,7 @@ Added domain to `/etc/hosts` for convenience:
 Visited `http://analytical.htb` → Redirected to Metabase login page.
 
 ---
-
+````
 ## 2. Subdomain Bruteforce & Discovering Data
 
 Used subdomain enumeration tools (like `gobuster` or `ffuf`) to find:
