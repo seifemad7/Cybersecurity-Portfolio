@@ -1,10 +1,10 @@
 ````markdown
 # Analytics CTF Room Writeup
 
-**Target:** analytical.htb  
-**Goal:** Initial RCE via Metabase (CVE-2023-38646), user shell, then root via OverlayFS kernel exploit (CVE-2023-2640 & CVE-2023-32629)
+Target:analytical.htb  
+Goal: Initial RCE via Metabase (CVE-2023-38646), user shell, then root via OverlayFS kernel exploit (CVE-2023-2640 & CVE-2023-32629)
 
----
+
 ````
 ## 1. Initial Recon & Enumeration
 
