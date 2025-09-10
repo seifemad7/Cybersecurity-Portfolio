@@ -1,4 +1,3 @@
-
 ````markdown
 # Forest CTF Room Writeup
 
@@ -13,7 +12,7 @@ Started with SMB enumeration using `enum4linux`:
 
 ```bash
 enum4linux -a 10.10.10.161
-```
+````
 
 Found valid usernames:
 
@@ -165,24 +164,26 @@ impacket-wmiexec htb.local/Administrator@10.10.10.161 -hashes aad3b435b51404eeaa
 
 ## 9. Final Result
 
-🪣 Dumped all domain user hashes  
-🧠 Took control of the entire Active Directory domain  
+🪣 Dumped all domain user hashes
+🧠 Took control of the entire Active Directory domain
 🏁 Retrieved `root.txt` as Domain Administrator
 
 ---
+
 ## 🏁 Summary
 
-| Step | Technique |
-|------|-----------|
-| 1 | Enumerated usernames via SMB |
-| 2 | Performed AS-REP roasting to crack svc-alfresco |
-| 3 | Gained user shell via Evil-WinRM |
-| 4 | Used BloodHound to discover ACL privilege path |
-| 5 | Created user and added to Exchange Admins |
-| 6 | Abused WriteDACL to assign DCSync rights |
-| 7 | Dumped Administrator hash |
-| 8 | Logged in as Domain Admin (Pass-the-Hash) |
+| Step | Technique                                       |
+| ---- | ----------------------------------------------- |
+| 1    | Enumerated usernames via SMB                    |
+| 2    | Performed AS-REP roasting to crack svc-alfresco |
+| 3    | Gained user shell via Evil-WinRM                |
+| 4    | Used BloodHound to discover ACL privilege path  |
+| 5    | Created user and added to Exchange Admins       |
+| 6    | Abused WriteDACL to assign DCSync rights        |
+| 7    | Dumped Administrator hash                       |
+| 8    | Logged in as Domain Admin (Pass-the-Hash)       |
 
 **A perfect example of a no-exploit, misconfiguration-based full domain compromise.**
-````
 
+```
+```
